@@ -5,12 +5,15 @@
  */
 package com.orange.startit.core;
 
+import com.orange.startit.config.ProjectConfig;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 /**
  *
  * @author Marius.Herta
  */
 public class Main {
     public static void main(String[] args) {
-        
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
     }
 }
