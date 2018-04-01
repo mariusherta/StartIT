@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class TaskExecutor {
+public class ProcessExecutor {
     private List<Task> taskList= Collections.synchronizedList(new LinkedList<>());;
     ExecutorService service = Executors.newCachedThreadPool();
     

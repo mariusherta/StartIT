@@ -2,16 +2,19 @@
 package com.orange.startit.beans;
 
 import com.orange.startit.beanInterface.Task;
+import java.util.Arrays;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class TaskChecker {
+    private final List<String> CONTENT_PROVIDERS = Arrays.asList("Wikipedia","Google","Pinterest");
     
     @Autowired
     public boolean checkTask(Task task){
-        if(task instanceof SearchTask){
-            if(((SearchTask) task).getCONTENT_PROVIDERS().contains(((SearchTask) task).getSearchSubject().getSearchAt())){
+        if(task instanceof WikiSearch){
+            if(CONTENT_PROVIDERS.contains(((WikiSearch) task).getSearchSubject().getSearchAt())){
                 return true;
             }
         }
