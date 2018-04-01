@@ -21,7 +21,7 @@ public class Main {
         
         SearchSubject searchSubject = new SearchSubject("race car", "Wikipedia");
         SearchSubject searchSubject1 = new SearchSubject("ship", "Wikipedia");
-        SearchSubject searchSubject2 = new SearchSubject("wreckage", "Wikipedia");
+        SearchSubject searchSubject2 = new SearchSubject("aircraft", "Wikipedia");
         TaskFactory taskFactory = new TaskFactory();
         ProcessExecutor taskExecutor = new ProcessExecutor();
         taskExecutor.addTask(taskFactory.getInstance(searchSubject));

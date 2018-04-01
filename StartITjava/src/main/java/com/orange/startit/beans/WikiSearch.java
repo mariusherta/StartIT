@@ -23,7 +23,7 @@ public class WikiSearch implements Serializable,Task{
     
     @Autowired
     public void execute(){
-        String searchUrl = URL1+searchSubject+URL2;
+        String searchUrl = URL1+searchSubject.getSubject()+URL2;
         String result = restClient.get(searchUrl); 
         postResultToFile(result);
     }
