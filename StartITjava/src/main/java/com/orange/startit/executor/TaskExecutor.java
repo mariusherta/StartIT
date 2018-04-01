@@ -44,7 +44,6 @@ public class TaskExecutor {
         taskList.stream()
                 .filter(task -> verifyTask(task))
                 .forEach(task -> task.execute());
-        taskList.clear();
-       
+        taskList.clear();       
     }       
 }

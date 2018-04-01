@@ -1,7 +1,6 @@
 package com.orange.startit.beans;
 
 import com.orange.startit.beanInterface.Task;
-import com.orange.startit.filemanager.SearchSubject;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;

@@ -1,5 +1,6 @@
 package com.orange.startit.filemanager;
 
+import com.orange.startit.beans.SearchSubject;
 import com.orange.startit.filemanager.exceptions.InvalidFormatException;
 import java.io.IOException;
 import java.nio.file.Path;
