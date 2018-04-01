@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.orange.startit.beans;
 
 import com.orange.startit.restClient.RestClient;
@@ -17,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class WikiSearch implements Serializable{
     private final String URL1 = "https://en.wikipedia.org/w/api.php?action=opensearch&search=";
     private final String URL2 = "&limit=1&namespace=0&redirects=resolve&format=json";   
-    RestClient restClient = new RestClient();
+    private RestClient restClient = new RestClient();
     String searchWord = "";
 
     public WikiSearch() {
@@ -27,7 +22,7 @@ public class WikiSearch implements Serializable{
     public void searchByString(String searchWord){
         this.searchWord = searchWord;
         String searchUrl = URL1+searchWord+URL2;
-        String result = restClient.wikiSearch(searchUrl); 
+        String result = restClient.get(searchUrl); 
         postResultToFile(result);
     }
     

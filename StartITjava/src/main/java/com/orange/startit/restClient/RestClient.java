@@ -19,12 +19,11 @@ public class RestClient {
     RestTemplate restTemplate = new RestTemplate();
     
     @Autowired
-    public String wikiSearch(String url){        
+    public String get(String url){        
         ResponseEntity<String> responseEntity = restTemplate.getForEntity(url, String.class);
-        String json = responseEntity.getBody();
+        String result = responseEntity.getBody();
         
-        System.out.println(json);
-        return json;        
+        System.out.println("Received success message: "+ result);
+        return result;
     }
-    
 }

@@ -19,6 +19,24 @@ public class SearchSubject {
         this.searchAt = searchAt;
         this.subject = subject;
     }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getSearchAt() {
+        return searchAt;
+    }
+
+    public void setSearchAt(String searchAt) {
+        this.searchAt = searchAt;
+    }
+    
+    
     
     public String toString(){
         return this.subject + " " + this.searchAt;
