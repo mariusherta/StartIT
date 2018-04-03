@@ -1,6 +1,5 @@
 package com.orange.startit.core;
 
-import com.orange.startit.beans.WikiSearch;
 import com.orange.startit.config.ProjectConfig;
 import com.orange.startit.executor.ProcessExecutor;
 import com.orange.startit.filemanager.DirScan;

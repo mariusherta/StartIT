@@ -2,6 +2,7 @@
 package com.orange.startit.beans;
 
 import com.orange.startit.beanInterface.Task;
+import com.orange.startit.taskFactory.TaskFactory.WikiSearch;
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

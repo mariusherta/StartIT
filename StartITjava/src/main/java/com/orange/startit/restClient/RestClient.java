@@ -6,7 +6,6 @@
 package com.orange.startit.restClient;
 
 
-import com.orange.startit.beans.WikiSearch;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
